@@ -1,0 +1,100 @@
+.companies-catalog {
+  background-color: var(--background);
+  min-height: calc(100vh - 80px);
+}
+
+.catalog-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.exchange-toggle {
+  display: flex;
+  gap: 1rem;
+}
+
+.loading {
+  text-align: center;
+  padding: 2rem;
+  font-size: 1.2rem;
+}
+
+.stocks-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.stock-card {
+  transition: transform 0.3s ease;
+}
+
+.stock-card:hover {
+  transform: translateY(-5px);
+}
+
+.stock-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.tag {
+  font-size: 0.8rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  color: white;
+  text-transform: uppercase;
+}
+
+.tag.gainer {
+  background-color: var(--success);
+}
+
+.tag.loser {
+  background-color: var(--error);
+}
+
+.tag.index {
+  background-color: var(--secondary);
+}
+
+.stock-price {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0.5rem 0;
+  color: var(--primary);
+}
+
+.stock-change {
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.stock-change.positive {
+  color: var(--success);
+}
+
+.stock-change.negative {
+  color: var(--error);
+}
+
+.buy-btn {
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .catalog-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .stocks-grid {
+    grid-template-columns: 1fr;
+  }
+}
