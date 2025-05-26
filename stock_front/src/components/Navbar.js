@@ -51,10 +51,10 @@ const Navbar = () => {
                 <nav>
                     <ul className="nav-links">
                         <li><Link to="/">Home</Link></li>
-                        {isLoggedIn && <li><Link to="/dashboard">Dashboard</Link></li>}
+                        <li><Link to="/dashboard">Dashboard</Link></li>
                         <li><Link to="/companiescatalog">Market</Link></li>
-                        {isLoggedIn && <li><Link to="/budget">Budget</Link></li>}
-                        {isLoggedIn && <li><Link to="/portfolio">Portfolio</Link></li>}
+                        <li><Link to="/budget">Budget</Link></li>
+                        <li><Link to="/portfolio">Portfolio</Link></li>
                         <li><Link to="/learn">Learn</Link></li>
                     </ul>
                 </nav>
